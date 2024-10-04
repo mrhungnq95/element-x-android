@@ -206,7 +206,7 @@ class CallScreenPresenter @AssistedInject constructor(
                         theme = theme,
                     ).getOrThrow()
                     callWidgetDriver.value = result.driver
-                    result.url
+                    result.url.replace("/room#", "#")
                 }
             }
         }
